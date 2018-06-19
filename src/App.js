@@ -12,7 +12,6 @@ class App extends Component {
           <h3>Ain't no party like an</h3>
           <h1>API Party</h1>
         </div>
-      </div>
 
       <ul className='navLinks'>
         <li>
@@ -21,7 +20,7 @@ class App extends Component {
       </ul>
 
       <Switch>
-        <Route path='/github' component={GitHub} />
+        <Route path='/github' component={Github} />
         <Route
           render={
             () => (
@@ -30,6 +29,18 @@ class App extends Component {
           }
         />
       </Switch>
+
+      <Switch>
+        <Route path'/googleProvider' component={googleProvider} />
+        <Route
+         render={
+           () => (
+             <p>Make a new Google account</p>
+           )
+         }
+        />
+      </Switch>
+      
      </div>
     )
   }

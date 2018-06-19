@@ -24,7 +24,7 @@ class GithubUser extends Component {
         .then(user => this.setState({ user }))
     }
 
-    render(
+    render() {
         const { user } = this.state
     
         return (
